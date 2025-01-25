@@ -5,13 +5,13 @@
     overflow: hidden;
   }
   
-  .carouselInner {
+.carouselInner {
     position: relative;
     width: 100%;
     height: 100%;
-  }
+}
   
-  .carouselItem {
+.carouselItem {
     position: absolute;
     top: 0;
     left: 0;
@@ -19,62 +19,24 @@
     height: 100%;
     opacity: 0;
     transition: opacity 1s ease-in-out;
-  }
+}
   
-  .carouselItem.active {
+.carouselItem.active {
     opacity: 1;
-  }
+}
   
-  .carouselControlPrev,
-  .carouselControlNext {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5); /* Arrière-plan sombre pour les contrôles */
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  .carouselControlPrev {
-    left: 10px;
-  }
-  
-  .carouselControlNext {
-    right: 10px;
-  }
-  
-  .carouselControlPrevIcon,
-  .carouselControlNextIcon {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-top: 3px solid #fff;
-    border-right: 3px solid #fff;
-    transform: rotate(45deg);
-  }
-  
-  .carouselControlPrevIcon {
-    transform: rotate(225deg);
-  }
-  
-  .carouselControlNextIcon {
-    transform: rotate(45deg);
-  }
-  
-  .btnContainer {
+.btnContainer {
     position: absolute;
     color: red;
     z-index: 2;
     width: 80%;
     left: 10%;
-    bottom: 30px;
+    bottom: 60px;
     display: flex;
     justify-content: space-around;
   }
 
-  .btn {
+.btn {
     padding: 8px;
     border-radius: 16px;
     opacity: 0.7;
@@ -82,13 +44,14 @@
     background-color: rgb(255, 255, 255);
     color: #b88917;
     width: 150px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: medium;
+    font-family: 'Lobster', sans-serif;
     transition: .4s ease-in-out;
-  }
+}
 
-  .btn:hover {
+.btn:hover {
     cursor: pointer;
     opacity: 1;
     
-  }
+}

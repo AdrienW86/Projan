@@ -40,15 +40,7 @@ export default function Carousel() {
             }}
           />
         ))}
-      </div>
-      <a className={styles.carouselControlPrev} href="#carouselExampleFade" role="button" data-bs-slide="prev">
-        <span className={styles.carouselControlPrevIcon} aria-hidden="true"></span>
-        <span className="sr-only"></span>
-      </a>
-      <a className={styles.carouselControlNext} href="#carouselExampleFade" role="button" data-bs-slide="next">
-        <span className={styles.carouselControlNextIcon} aria-hidden="true"></span>
-        <span className="sr-only"></span>
-      </a>
+      </div>   
     </div>
   );
 }
