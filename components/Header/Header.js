@@ -8,10 +8,11 @@ export default function Header() {
       <Image
       src="/logo2.png"
       alt="Vue du château-hôtel"
-      width={300}
-      height={200}
+      width={200}
+      height={100}
       sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw"
     />
+    <h1 className={styles.h1}> Château de Projan</h1>
     </header>
   )
 }
