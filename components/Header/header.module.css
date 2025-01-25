@@ -2,5 +2,6 @@
     height: 200px;
     width: 100%;
     color: red;
-    background-color: white;
+    display: flex;
+    justify-content: center;
 }
