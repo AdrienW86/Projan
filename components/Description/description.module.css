@@ -9,9 +9,18 @@
 
 .article, .intro {
     padding: 12px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-family: 'Lobster', sans-serif;
     font-weight: lighter;
     font-size: 18px;
-    background-color:white;
+    opacity: 0.7;
+    background-color:rgb(0, 0, 0);
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* Superposition noire à 50% d'opacité */
+    url('/image3.jpg'); /* Image de fond */
+    overflow: auto; /* Permet de scroller sans affecter l'image de fond */
+    background-size: cover; /* L'image couvre toute la zone */
+    background-repeat: no-repeat; /* Pas de répétition de l'image */
+    background-attachment: fixed; /* L'image reste fixe lors du scroll */
+    background-position: center; /* Centrage de l'image */
 }
