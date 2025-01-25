@@ -1,8 +1,24 @@
 import React from 'react'
+import Image from 'next/image';
 import styles from './footer.module.css'
 
 export default function Footer() {
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
+
   return (
-    <footer>Footer</footer>
+    <footer className={styles.footer}>
+       <div className={styles.container}>
+        <Image
+            src="/favicon2.png"
+            alt="Vue du château-hôtel"
+            width={120}
+            height={50}
+            sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          />
+       </div>
+      <h3 className={styles.h3}> Château de Projan </h3>
+      <p className={styles.txt}> © {currentYear}. Tous droits réservés. </p>
+    </footer>
   )
 }

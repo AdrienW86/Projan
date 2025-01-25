@@ -6,7 +6,14 @@ import styles from './banner.module.css';
 const images = [
   '/image1.jpg',
   '/image2.jpg',
-  '/image3.jpg', // Ajoute autant d'images que tu veux
+  '/image3.jpg', 
+  '/image4.jpg', 
+  '/image5.jpg',
+  '/image6.jpg',
+  '/image7.jpg',
+  '/image8.jpg',
+  '/image9.jpg',
+  '/image10.jpg',
 ];
 
 export default function Carousel() {
@@ -15,9 +22,9 @@ export default function Carousel() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // Change l'image toutes les 3 secondes
+    }, 3000); 
 
-    return () => clearInterval(interval); // Nettoie l'intervalle quand le composant est démonté
+    return () => clearInterval(interval); 
   }, []);
 
   return (
@@ -36,7 +43,7 @@ export default function Carousel() {
               backgroundImage: `url(${image})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
-              height: '500px', // Ajuste la hauteur du carrousel
+              height: '500px', 
             }}
           />
         ))}
