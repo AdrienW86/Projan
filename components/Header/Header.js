@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <Image
-      src="/logo2.png"
+      src="/logo3.png"
       alt="Vue du château-hôtel"
       width={200}
       height={100}
