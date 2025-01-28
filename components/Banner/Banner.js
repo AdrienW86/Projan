@@ -43,7 +43,7 @@ export default function Carousel() {
               backgroundImage: `url(${image})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
-              height: '500px', 
+              height: '85vh', 
             }}
           />
         ))}
