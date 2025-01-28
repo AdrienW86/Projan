@@ -73,7 +73,8 @@ export default function Description() {
           </h2>
         </div>
 
-        <div className={styles.article} >
+       <section className={styles.background}>
+       <div className={styles.article} >
           <ul>
             <li className={styles.li}>
               <motion.img
@@ -207,6 +208,7 @@ export default function Description() {
             <a href="/reservation" className={styles.ctaButton}>Réservez dès aujourd’hui</a> pour vivre un moment d'exception dans un cadre enchanteur.
           </p>
         </div>
+       </section>
       </section>
     </AnimatePresence>
   );

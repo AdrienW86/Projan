@@ -12,7 +12,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
        <head>
-        {/* Ajout du favicon */}
         <link rel="icon" href="favicon2.png" />
         <link
           href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
