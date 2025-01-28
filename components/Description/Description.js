@@ -25,19 +25,9 @@ export default function Description() {
     <AnimatePresence>
       <section className={styles.description}>
         <div className={styles.box}>
-          <motion.h2
-            ref={ref2}
-            initial={{ opacity: 0, x: 100 }}
-            animate={{
-              opacity: inView2 ? 1 : 0,
-              x: inView2 ? 0 : 100,
-            }}
-            exit={{ opacity: 0, x: -100 }}
-            transition={{ duration: 0.5 }}
-            className={styles.h2}
-          >
+          <h2 className={styles.h2}>
             Localisation
-          </motion.h2>
+          </h2>
         </div>
 
         <motion.section className={styles.localisation}>
