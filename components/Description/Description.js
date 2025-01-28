@@ -93,7 +93,7 @@ export default function Description() {
                   x: inView6 ? 0 : -100,
                 }}
                 exit={{ opacity: 0, x: -100 }}
-                transition={{ duration: 1 }}
+                transition={{ duration: 0.5 }}
                 src="/image5.jpg"
                 alt="Vue pittoresque et charmante du Château de Projan entouré de collines"
                 width={200}
@@ -109,7 +109,7 @@ export default function Description() {
                   x: inView7 ? 0 : 100,
                 }}
                 exit={{ opacity: 0, x: 100 }}
-                transition={{ duration: 1 }}
+                transition={{ duration: 0.5 }}
                 className={styles.p}
               >
                 Un cadre enchanteur : Profitez d’un parc majestueux où il fait bon se promener, lire ou simplement se ressourcer.
@@ -124,7 +124,7 @@ export default function Description() {
                   x: inView8 ? 0 : -100,
                 }}
                 exit={{ opacity: 0, x: -100 }}
-                transition={{ duration: 1 }}
+                transition={{ duration: 0.5 }}
                 className={styles.p}
               > 
                 Une gastronomie régionale : Découvrez les saveurs authentiques de la Gascogne 
@@ -138,7 +138,7 @@ export default function Description() {
                   x: inView9 ? 0 : 100,
                 }}
                 exit={{ opacity: 0, x: 100 }}
-                transition={{ duration: 1 }}
+                transition={{ duration: 0.5 }}
                 src="/image9.jpg"
                 alt="Vue pittoresque et charmante du Château de Projan entouré de collines"
                 width={200}
@@ -156,7 +156,7 @@ export default function Description() {
                   x: inView10 ? 0 : -100,
                 }}
                 exit={{ opacity: 0, x: -100 }}
-                transition={{ duration: 1 }}
+                transition={{ duration: 0.5 }}
                 src="/image9.jpg"
                 alt="Vue pittoresque et charmante du Château de Projan entouré de collines"
                 width={200}
@@ -172,7 +172,7 @@ export default function Description() {
                   x: inView11 ? 0 : 100,
                 }}
                 exit={{ opacity: 0, x: 100 }}
-                transition={{ duration: 1 }}
+                transition={{ duration: 0.5 }}
                 className={styles.p}
               >
                 Des activités variées : Balades à vélo, visites de vignobles, découverte des villages pittoresques et des marchés traditionnels de la région.
@@ -187,7 +187,7 @@ export default function Description() {
                   x: inView12 ? 0 : -100,
                 }}
                 exit={{ opacity: 0, x: -100 }}
-                transition={{ duration: 1 }}
+                transition={{ duration: 0.5 }}
                 className={styles.p}
               >
                 Bien-être et détente : Laissez-vous tenter par un moment de relaxation sur la terrasse ensoleillée ou près de la piscine, dans une atmosphère paisible.
@@ -200,7 +200,7 @@ export default function Description() {
                   x: inView13 ? 0 : 100,
                 }}
                 exit={{ opacity: 0, x: 100 }}
-                transition={{ duration: 1 }}
+                transition={{ duration: 0.5 }}
                 src="/image1.jpg"
                 alt="Vue pittoresque et charmante du Château de Projan entouré de collines"
                 width={300}
