@@ -56,24 +56,15 @@
 
 .li {
     display: flex;
-    margin-bottom: 30px;
+    margin: 80px 0;
+    position: relative;
 }
 
 .picture {
     width: 50%;
-    height: auto;
+    height: 200px;
     border-radius: 20px;
     border: 1px solid #b88917;
-}
-
-.picture2 {
-    width: 50%;
-    height: auto;
-    position: relative;
-    top: 10%;
-    border: 1px solid #b88917;
-    border-radius: 20px;
-    
 }
 
 .p {
@@ -100,3 +91,22 @@
   .ctaButton:hover {
     background-color: #9a7113;
   }
+
+  /* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+    .picture {
+        width: 50%;
+        height: 300px;
+        border-radius: 20px;
+        border: 1px solid #b88917;
+    }
+}
+
+@media (min-width: 1121px) {
+    .picture {
+        width: 50%;
+        height: 400px;
+        border-radius: 20px;
+        border: 1px solid #b88917;
+    }
+}

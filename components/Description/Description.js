@@ -131,7 +131,7 @@ export default function Description() {
                 }}
                 exit={{ opacity: 0, x: 100 }}
                 transition={{ duration: 0.5 }}
-                src="/image9.jpg"
+                src="/image13.jpg"
                 alt="Vue pittoresque et charmante du Château de Projan entouré de collines"
                 width={200}
                 height={200}
@@ -198,7 +198,7 @@ export default function Description() {
                 width={300}
                 height={300}
                 sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                className={styles.picture2}
+                className={styles.picture}
               />
             </li>
           </ul>
