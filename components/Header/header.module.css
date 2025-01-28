@@ -85,7 +85,7 @@
 .menu {
     position: absolute;
     z-index: 20;
-    top: 150px;
+    top: 15vh;
     height: 150px;
     width: 100%;
     list-style: none;

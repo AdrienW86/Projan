@@ -103,7 +103,7 @@ export default function Description() {
                 transition={{ duration: 0.5 }}
                 className={styles.p}
               >
-                Un cadre enchanteur : Profitez d’un parc majestueux où il fait bon se promener, lire ou simplement se ressourcer.
+                <span className={styles.span}>Un cadre enchanteur :</span>Profitez d’un parc majestueux où il fait bon se promener, lire ou simplement se ressourcer.
               </motion.p>
             </li>
             <li className={styles.li}>
@@ -118,7 +118,7 @@ export default function Description() {
                 transition={{ duration: 0.5 }}
                 className={styles.p}
               > 
-                Une gastronomie régionale : Découvrez les saveurs authentiques de la Gascogne 
+                <span className={styles.span}>Une gastronomie régionale :</span>Découvrez les saveurs authentiques de la Gascogne 
                 avec des produits locaux et une cuisine généreuse.
               </motion.p>
               <motion.img
@@ -166,7 +166,7 @@ export default function Description() {
                 transition={{ duration: 0.5 }}
                 className={styles.p}
               >
-                Des activités variées : Balades à vélo, visites de vignobles, découverte des villages pittoresques et des marchés traditionnels de la région.
+                <span className={styles.span}>Des activités variées :</span>Balades à vélo, visites de vignobles, découverte des villages pittoresques et des marchés traditionnels de la région.
               </motion.p>
             </li>
             <li className={styles.li}>
@@ -181,7 +181,7 @@ export default function Description() {
                 transition={{ duration: 0.5 }}
                 className={styles.p}
               >
-                Bien-être et détente : Laissez-vous tenter par un moment de relaxation sur la terrasse ensoleillée ou près de la piscine, dans une atmosphère paisible.
+                <span className={styles.span}>Bien-être et détente :</span>Laissez-vous tenter par un moment de relaxation sur la terrasse ensoleillée ou près de la piscine, dans une atmosphère paisible.
               </motion.p>
               <motion.img
                 ref={ref13} 
