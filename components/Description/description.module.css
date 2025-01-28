@@ -13,8 +13,7 @@
     text-align: center;
     font-family: 'Lobster', sans-serif;
     font-weight: lighter;
-    color: white;
-    
+    color: white; 
 }
 
 .localisation {
@@ -36,7 +35,10 @@
     color: rgb(0, 0, 0);
     font-family: 'Lobster', sans-serif;
     font-weight: lighter;
-    font-size: 18px;
+    font-size: 18px; 
+}
+
+.intro {
     overflow: hidden;
 }
 
@@ -47,13 +49,10 @@
     background-position: center; 
     background-attachment: fixed; 
     width: 100%; 
-   
+    height: auto;
     color: #ffffff;
     font-weight: lighter;
-   
 }
-
-
 
 .li {
     display: flex;
