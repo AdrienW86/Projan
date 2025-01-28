@@ -7,7 +7,6 @@ import Image from 'next/image';
 import styles from './description.module.css';
 
 export default function Description() {
-  // Utilisation de refs distincts pour chaque élément
   const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: false, threshold: 0.0 });
   const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: false, threshold: 0.0 });
   const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: false, threshold: 0.0 });
@@ -28,13 +27,13 @@ export default function Description() {
         <div className={styles.box}>
           <motion.h2
             ref={ref2}
-            initial={{ opacity: 0, x: 100 }} // Animation de départ (vers la droite)
+            initial={{ opacity: 0, x: 100 }}
             animate={{
               opacity: inView2 ? 1 : 0,
               x: inView2 ? 0 : 100,
             }}
             exit={{ opacity: 0, x: -100 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.5 }}
             className={styles.h2}
           >
             Localisation
@@ -53,13 +52,13 @@ export default function Description() {
           <div className={styles.intro}>
             <motion.p
               ref={ref4}
-              initial={{ opacity: 0, y: 50 }} // Paragraphe venant de bas
+              initial={{ opacity: 0, y: 50 }} 
               animate={{
                 opacity: inView4 ? 1 : 0,
                 y: inView4 ? 0 : 50,
               }}
-              exit={{ opacity: 0, y: 50 }}  // Animation de sortie vers le bas
-              transition={{ duration: 0.7 }}
+              exit={{ opacity: 0, y: 50 }}  
+              transition={{ duration: 0.5 }}
             > 
               Nichée au cœur de la Gascogne, entre collines verdoyantes et paysages vallonnés, le Château de Projan vous ouvre ses portes pour une escapade hors du temps...
             </motion.p>
@@ -67,27 +66,19 @@ export default function Description() {
         </motion.section>
 
         <div className={styles.box}>
-          <motion.h2
-            ref={ref3}
-            initial={{ opacity: 0, x: -100 }} // Animation de départ (vers la gauche)
-            animate={{
-              opacity: inView3 ? 1 : 0,
-              x: inView3 ? 0 : -100,
-            }}
-            exit={{ opacity: 0, x: 100 }}  // Animation de sortie vers la droite
-            transition={{ duration: 1 }}
+          <h2
             className={styles.h2}
           >
             Pourquoi séjourner au Château de Projan ?
-          </motion.h2>
+          </h2>
         </div>
 
         <div className={styles.article} >
           <ul>
             <li className={styles.li}>
               <motion.img
-                ref={ref6}  // Référence unique pour cette image
-                initial={{ opacity: 0, x: -100 }} // Image venant de la droite
+                ref={ref6}  
+                initial={{ opacity: 0, x: -100 }} 
                 animate={{
                   opacity: inView6 ? 1 : 0,
                   x: inView6 ? 0 : -100,
@@ -102,8 +93,8 @@ export default function Description() {
                 className={styles.picture}
               />
               <motion.p
-                ref={ref7}  // Référence unique pour ce paragraphe
-                initial={{ opacity: 0, x: 100 }} // Paragraphe venant de la gauche
+                ref={ref7}  
+                initial={{ opacity: 0, x: 100 }} 
                 animate={{
                   opacity: inView7 ? 1 : 0,
                   x: inView7 ? 0 : 100,
@@ -117,8 +108,8 @@ export default function Description() {
             </li>
             <li className={styles.li}>
               <motion.p
-                ref={ref8}  // Référence unique pour ce paragraphe
-                initial={{ opacity: 0, x: -100 }} // Paragraphe venant de la droite
+                ref={ref8}  
+                initial={{ opacity: 0, x: -100 }} 
                 animate={{
                   opacity: inView8 ? 1 : 0,
                   x: inView8 ? 0 : -100,
@@ -131,8 +122,8 @@ export default function Description() {
                 avec des produits locaux et une cuisine généreuse.
               </motion.p>
               <motion.img
-                ref={ref9}  // Référence unique pour cette image
-                initial={{ opacity: 0, x: 100 }} // Image venant de la gauche
+                ref={ref9}  
+                initial={{ opacity: 0, x: 100 }} 
                 animate={{
                   opacity: inView9 ? 1 : 0,
                   x: inView9 ? 0 : 100,
@@ -149,8 +140,8 @@ export default function Description() {
             </li>
             <li className={styles.li}>
               <motion.img
-                ref={ref10}  // Référence unique pour cette image
-                initial={{ opacity: 0, x: -100 }} // Image venant de la droite
+                ref={ref10}  
+                initial={{ opacity: 0, x: -100 }} 
                 animate={{
                   opacity: inView10 ? 1 : 0,
                   x: inView10 ? 0 : -100,
@@ -165,8 +156,8 @@ export default function Description() {
                 className={styles.picture}
               />
               <motion.p
-                ref={ref11}  // Référence unique pour ce paragraphe
-                initial={{ opacity: 0, x: 100 }} // Paragraphe venant de la gauche
+                ref={ref11}  
+                initial={{ opacity: 0, x: 100 }} 
                 animate={{
                   opacity: inView11 ? 1 : 0,
                   x: inView11 ? 0 : 100,
@@ -180,8 +171,8 @@ export default function Description() {
             </li>
             <li className={styles.li}>
               <motion.p
-                ref={ref12}  // Référence unique pour ce paragraphe
-                initial={{ opacity: 0, x: -100 }} // Paragraphe venant de la droite
+                ref={ref12}  
+                initial={{ opacity: 0, x: -100 }} 
                 animate={{
                   opacity: inView12 ? 1 : 0,
                   x: inView12 ? 0 : -100,
@@ -193,8 +184,8 @@ export default function Description() {
                 Bien-être et détente : Laissez-vous tenter par un moment de relaxation sur la terrasse ensoleillée ou près de la piscine, dans une atmosphère paisible.
               </motion.p>
               <motion.img
-                ref={ref13}  // Référence unique pour cette image
-                initial={{ opacity: 0, x: 100 }} // Image venant de la gauche
+                ref={ref13} 
+                initial={{ opacity: 0, x: 100 }} 
                 animate={{
                   opacity: inView13 ? 1 : 0,
                   x: inView13 ? 0 : 100,
