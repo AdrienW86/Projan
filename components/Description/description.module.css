@@ -1,19 +1,69 @@
+.box {
+    z-index: 2;
+    background-color: #b88917;
+}
+
 .h2 {
+    z-index: 2;
     padding: 8px;
     text-align: center;
     font-family: 'Lobster', sans-serif;
     font-weight: lighter;
     color: white;
-    background-color: #b88917;
+    
 }
+
+.localisation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+  }
 
 .article, .intro {
     padding: 12px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-family: 'Lobster', sans-serif;
     font-weight: lighter;
     font-size: 18px;
-    opacity: 0.7;
-   
+    background-color: white;;
+   overflow: hidden;
 }
 
+.li {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.picture {
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+    border: 1px solid #b88917;
+}
+
+.picture2 {
+    width: 50%;
+    height: auto;
+    position: relative;
+    top: 10%;
+    border: 1px solid #b88917;
+    border-radius: 20px;
+    
+}
+
+.p {
+    width: 50%;
+    height: auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
