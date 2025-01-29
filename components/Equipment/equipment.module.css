@@ -1,24 +1,32 @@
 .container {
     display: flex;
-    width: 100%;
-
-    border: 2px solid #b88917;
-    padding: 0 20px;
-    background-color: white;
-}
-
-.column {
-    width: 50%;
-}
-
-.box {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0
+  }
+  
+  .column {
     display: flex;
-    
-    width: 100%;
-    margin: 15px 0
-}
-
-.txt {
-    color: black;
-    margin-left: 20px;
-}
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 160px;
+    max-width: 160px; /* Ajuste la taille maximale des boîtes */
+  }
+  
+  .txt {
+    margin-left: 10px; /* Espace entre l'image et le texte */
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
