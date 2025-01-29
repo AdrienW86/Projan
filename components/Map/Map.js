@@ -8,7 +8,7 @@ export default function GoogleMap() {
     name: "Château de Projan",
     email: "contact@chateauprojan.fr",
     phone: "05 62 09 46 21",
-    fullAddress: "500 route du Chateau, 32400 Projan France",
+    fullAddress: "500 route du Château, 32400 Projan France",
   };
 
   return (
