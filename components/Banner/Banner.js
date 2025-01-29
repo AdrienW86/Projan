@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Link from 'next/link'
 import styles from './banner.module.css';
 
 const images = [
@@ -30,8 +31,8 @@ export default function Carousel() {
   return (
     <div className={styles.carousel} id="carouselExampleFade">
         <div className={styles.btnContainer}>
-            <button className={styles.btn}> Réserver </button>
-            <button className={styles.btn}> Voir toutes les photos </button>
+            <Link className={styles.btn} href="/contact"> Réserver </Link>
+            <Link className={styles.btn} href="/pictures"> Voir toutes les photos </Link>
            
         </div>
       <div className={styles.carouselInner}>

@@ -44,6 +44,7 @@
     width: 150px;
     font-size: 16px;
     font-weight: medium;
+    text-align: center;
     font-family: 'Lobster', sans-serif;
     transition: .4s ease-in-out;
 }
