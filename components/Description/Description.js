@@ -195,7 +195,7 @@ export default function Description() {
 
           <p>
             Venez découvrir le charme et l’authenticité du Château de Projan, un lieu où passé et présent s’entrelacent pour vous offrir une expérience unique.
-            <a href="/reservation" className={styles.ctaButton}>Réservez dès aujourd’hui</a> pour vivre un moment d'exception dans un cadre enchanteur.
+            <a href="/contact" className={styles.ctaButton}>Réservez dès aujourd’hui</a> pour vivre un moment d'exception dans un cadre enchanteur.
           </p>
         </div>
        </section>
