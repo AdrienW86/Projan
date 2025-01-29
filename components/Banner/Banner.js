@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link'
+import { motion, AnimatePresence } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 import styles from './banner.module.css';
 
 const images = [
@@ -19,6 +21,9 @@ const images = [
 
 export default function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: false, threshold: 0.0 });
+  const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: false, threshold: 0.0 });
+  
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -31,8 +36,34 @@ export default function Carousel() {
   return (
     <div className={styles.carousel} id="carouselExampleFade">
         <div className={styles.btnContainer}>
-            <Link className={styles.btn} href="/contact"> Réserver </Link>
-            <Link className={styles.btn} href="/pictures"> Voir toutes les photos </Link>
+            <motion.a 
+              className={styles.btn} 
+              href="/contact"
+              ref={ref1}  
+              initial={{ opacity: 0, x: -50 }} 
+              animate={{
+                opacity: inView1 ? 1 : 0,
+                x: inView1 ? 0 : -50,
+              }}
+              exit={{ opacity: 0, x: -50 }}
+              transition={{ duration: 0.3 }}
+            > 
+              Réserver 
+            </motion.a>
+            <motion.a 
+              className={styles.btn} 
+              href="/pictures"
+              ref={ref2}  
+              initial={{ opacity: 0, x: 50 }} 
+              animate={{
+                opacity: inView2 ? 1 : 0,
+                x: inView2 ? 0 : 50,
+              }}
+              exit={{ opacity: 0, x: 50 }}
+              transition={{ duration: 0.3 }}
+            > 
+              Voir toutes les photos 
+            </motion.a>
            
         </div>
       <div className={styles.carouselInner}>

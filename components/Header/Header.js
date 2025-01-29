@@ -2,7 +2,8 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 import styles from './header.module.css'
 
 export default function Header() {
@@ -11,9 +12,20 @@ export default function Header() {
       setIsMenuOpen(!isMenuOpen);
   };
 
+   const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: false, threshold: 0.0 });
+    const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: false, threshold: 0.0 });
+
   return (
     <header className={styles.header}>
-      <Image
+     <motion.img
+        ref={ref1}  
+        initial={{ opacity: 0, x: -100 }} 
+        animate={{
+          opacity: inView1 ? 1 : 0,
+          x: inView1 ? 0 : -100,
+        }}
+        exit={{ opacity: 0, x: -100 }}
+        transition={{ duration: 0.5 }}
         className={styles.logo}
         src="/logo3.png"
         alt="Vue du château-hôtel"
@@ -21,7 +33,20 @@ export default function Header() {
         height={100}
         sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw"
       />
-      <h1 className={styles.h1}> Château de Projan</h1>
+      <motion.h1 
+        className={styles.h1}
+        ref={ref2}  
+        initial={{ opacity: 0, x: 100 }} 
+        animate={{
+          opacity: inView2 ? 1 : 0,
+          x: inView2 ? 0 : 100,
+        }}
+        exit={{ opacity: 0, x: 100 }}
+        transition={{ duration: 0.5 }}
+
+      > Château de Projan
+
+      </motion.h1>
       <div className={styles.buttonBox}> 
         <button className={`${styles.hamburger} ${isMenuOpen ? styles.open : styles.close}`} onClick={handleMenuToggle} aria-label="hamburger button">
             <span className={styles.line}> </span>
