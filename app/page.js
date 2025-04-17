@@ -12,9 +12,7 @@ export default function Home() {
       <Banner />
       <Equipment />
       <Description />
-      <Footer />
-
-     
+      <Footer />     
     </main>
   )
 }

@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Château de Projan',
-  description: 'Séjournez dans un château',
+  description: "Venez vivre une expérience inoubliable au Château de Projan, situé près de Pau. Niché au cœur de la nature, ce château moderne allie confort et élégance. Profitez d'un séjour dans un cadre unique avec des chambres spacieuses et une vue imprenable. Parfait pour une escapade romantique ou un moment de détente. Réservez dès maintenant pour une expérience exceptionnelle !"
 }
 
 export default function RootLayout({ children }) {

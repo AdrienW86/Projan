@@ -7,34 +7,29 @@
 }
 
 .container {
-  background-image: url('/image4.jpg'); /* Chemin vers l'image */
-  background-size: cover; /* L'image couvre tout */
-  background-position: center center; /* Centrer l'image */
-  background-repeat: no-repeat; /* Pas de répétition */
-  background-attachment: fixed; /* Garde l'image fixe lors du défilement */
-  width: 100%; /* Toute la largeur */
+  background-image: url('/image4.jpg'); 
+  background-size: cover; 
+  background-position: center center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  width: 100%; 
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white; /* Si tu veux avoir du texte visible sur l'image */
+  color: white; 
   text-align: center;
-  position: relative; /* Ajouté pour que :after soit positionné correctement */
+  position: relative; 
 }
 
-/* Code spécifique pour les appareils iOS */
-@supports (-webkit-overflow-scrolling: touch) {
-  .container {
-    background-attachment: scroll; /* Utilisation de scroll plutôt que fixed sur iOS */
-  }
-}
+
 
 .container:after {
   content: "";
   position: absolute;
-  inset: 0; /* Positionner :after pour couvrir toute la zone */
+  inset: 0; 
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* Fond semi-transparent noir */
-  z-index: 1; /* Mettre en arrière-plan */
+  background-color: rgba(0, 0, 0, 0.4); 
+  z-index: 1; 
 }
 
 
