@@ -56,7 +56,7 @@ export default function Header() {
         </div>
         {isMenuOpen && 
       <section className={styles.menu}>
-        <ul>
+        <ul className={styles.ul}>
           <li> <Link className={styles.li} href="/" onClick={handleMenuToggle}> Accueil </Link></li>
           <li> <Link className={styles.li} href="/pictures" onClick={handleMenuToggle}> Photos </Link></li>
           <li> <Link className={styles.li} href="/contact" onClick={handleMenuToggle}> Contact </Link></li>
