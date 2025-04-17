@@ -17,22 +17,24 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-     <motion.img
-        ref={ref1}  
-        initial={{ opacity: 0, x: -100 }} 
-        animate={{
-          opacity: inView1 ? 1 : 0,
-          x: inView1 ? 0 : -100,
-        }}
-        exit={{ opacity: 0, x: -100 }}
-        transition={{ duration: 0.5 }}
-        className={styles.logo}
-        src="/logo3.png"
-        alt="Vue du château-hôtel"
-        width={200}
-        height={100}
-        sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw"
-      />
+      <Link href="/">
+        <motion.img
+          ref={ref1}
+          initial={{ opacity: 0, x: -100 }}
+          animate={{
+            opacity: inView1 ? 1 : 0,
+            x: inView1 ? 0 : -100,
+          }}
+          exit={{ opacity: 0, x: -100 }}
+          transition={{ duration: 0.5 }}
+          className={styles.logo}
+          src="/logo3.png"
+          alt="Vue du château-hôtel"
+          width={200}
+          height={100}
+          sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw"
+        />
+      </Link>   
       <motion.h1 
         className={styles.h1}
         ref={ref2}  
@@ -43,9 +45,7 @@ export default function Header() {
         }}
         exit={{ opacity: 0, x: 100 }}
         transition={{ duration: 0.5 }}
-
       > Château de Projan
-
       </motion.h1>
       <div className={styles.buttonBox}> 
         <button className={`${styles.hamburger} ${isMenuOpen ? styles.open : styles.close}`} onClick={handleMenuToggle} aria-label="hamburger button">
