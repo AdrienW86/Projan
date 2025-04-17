@@ -1,6 +1,6 @@
 .footer {
     z-index: 5;
-    height: 150px;
+    height: 190px;
     width: 100%;
     background-color: #b88917;
 }
@@ -27,4 +27,22 @@
     font-family: 'Lobster', sans-serif;
     width: 100%;
     text-align: center;
+}
+
+.link {
+    width: 100%;
+    font-family: 'Lobster', sans-serif;
+    display: flex;
+    margin: 20px 0 10px 0;
+    justify-content: center;
+}
+
+.codev {
+    margin-left: 4px;
+    color: black;
+    font-style: italic;
+}
+
+.codev:hover {
+    text-decoration: underline;
 }

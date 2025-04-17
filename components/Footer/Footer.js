@@ -18,6 +18,9 @@ export default function Footer() {
           />
        </div>
       <h3 className={styles.h3}> Château de Projan </h3>
+      <a className={styles.link} href="https://code-v.fr" target="_blank" rel="noopener noreferrer">
+        Réalisé par <span className={styles.codev}> Codev </span>
+      </a>
       <p className={styles.txt}> © {currentYear}. Tous droits réservés. </p>
     </footer>
   )
