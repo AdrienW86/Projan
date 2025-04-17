@@ -6,8 +6,6 @@
 }
 
 .span {
-    position: relative;
-    bottom: 40px;
     text-decoration: underline;
     font-size: 1.2em;
     color: #b88917;  
