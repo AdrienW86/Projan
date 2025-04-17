@@ -15,7 +15,6 @@
     font-size: 1.2em;
     font-weight: bold;
     color: #b88917;  
-    letter-spacing: 0.1em;
     font-family: 'Lobster', sans-serif;
 }
 
@@ -38,7 +37,6 @@
 }
 
 .input::placeholder, .textarea::placeholder {
-    letter-spacing: 0.1em;
     font-family: 'Lobster', sans-serif;
 }
 
@@ -68,7 +66,6 @@
     justify-content: center;
     text-align: center;
     padding: 0 70px;
-    letter-spacing: 0.1em;
     font-size: 1.2em;
     font-family: 'Lobster', sans-serif;
     transition: .4s ease-in-out;
