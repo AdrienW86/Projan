@@ -11,7 +11,7 @@
   background-size: cover; /* L'image couvre tout */
   background-position: center center; /* Centrer l'image */
   background-repeat: no-repeat; /* Pas de répétition */
- 
+  background-attachment: fixed; /* Garde l'image fixe lors du défilement */
   width: 100%; /* Toute la largeur */
   display: flex;
   align-items: center;
