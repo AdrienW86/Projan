@@ -21,6 +21,13 @@
   position: relative; /* Ajouté pour que :after soit positionné correctement */
 }
 
+/* Code spécifique pour les appareils iOS */
+@supports (-webkit-overflow-scrolling: touch) {
+  .container {
+    background-attachment: scroll; /* Utilisation de scroll plutôt que fixed sur iOS */
+  }
+}
+
 .container:after {
   content: "";
   position: absolute;
@@ -29,6 +36,8 @@
   background-color: rgba(0, 0, 0, 0.4); /* Fond semi-transparent noir */
   z-index: 1; /* Mettre en arrière-plan */
 }
+
+
 
 .h2 {
   z-index: 3;
