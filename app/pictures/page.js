@@ -10,9 +10,7 @@ export default function Pictures() {
       <Header />
      <h2 className={styles.h2}>  Galerie de Photos </h2>
       <Gallery />
-      <Footer />
-
-     
+      <Footer />     
     </main>
   )
 }

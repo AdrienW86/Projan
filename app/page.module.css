@@ -1,4 +1,4 @@
-.main {
+.main, .container {
   display: flex;
   flex-direction: column;
   max-width: 120vh;
@@ -6,7 +6,32 @@
   background-color: white;
 }
 
+.container {
+  background-image: url('/image4.jpg'); /* Chemin vers l'image */
+  background-size: cover; /* L'image couvre tout */
+  background-position: center center; /* Centrer l'image */
+  background-repeat: no-repeat; /* Pas de répétition */
+ 
+  width: 100%; /* Toute la largeur */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Si tu veux avoir du texte visible sur l'image */
+  text-align: center;
+  position: relative; /* Ajouté pour que :after soit positionné correctement */
+}
+
+.container:after {
+  content: "";
+  position: absolute;
+  inset: 0; /* Positionner :after pour couvrir toute la zone */
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Fond semi-transparent noir */
+  z-index: 1; /* Mettre en arrière-plan */
+}
+
 .h2 {
+  z-index: 3;
   width: 100%;
   text-align: center;
   font-family: 'Lobster', sans-serif;
