@@ -6,7 +6,7 @@ import styles from './map.module.css';
 export default function GoogleMap() {
   const address = {
     name: "Château de Projan",
-    email: "contact@chateauprojan.fr",
+    email: "chateaudeprojandirection@gmail.com",
     phone: "05 62 09 46 21",
     fullAddress: "500 route du Château, 32400 Projan France",
   };
