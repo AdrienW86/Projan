@@ -48,22 +48,22 @@ export default function Form() {
             </div>
         )}
         {!isSended && (
-            <form onSubmit={handleSubmit(onSubmit)}>           
-              <h3 className={styles.h3}> Une question ? Nous vous répondrons dans les meilleurs délais </h3>    
-                <div className={styles.formContent}>
-                  <input className={styles.input} placeholder='Nom' {...register('name', {required: true})} />
-                    {errors.name && <span className={styles.error}> Ce champ est requis.</span>}          
-                  <input className={styles.input} placeholder='Email' {...register('email', {required: true})} />
-                    {errors.email && <span className={styles.error}> Ce champ est requis.</span>}          
-                  <input className={styles.input} placeholder='Demande' {...register('subject', {required: true})} />
-                    {errors.subject && <span className={styles.error}> Ce champ est requis.</span>}           
-                  <textarea className={styles.textarea} placeholder='Message'  {...register('message', {required: true})} />
-                    {errors.message && <span className={styles.error}> Ce champ est requis.</span>}     
-                </div>
-                <div>
-                  <button className={styles.submit} type="submit">Envoyer</button>
-                </div>     
-            </form>
+          <form onSubmit={handleSubmit(onSubmit)}>           
+            <h3 className={styles.h3}> Une question ? Nous vous répondrons dans les meilleurs délais </h3>    
+              <div className={styles.formContent}>
+                <input className={styles.input} placeholder='Nom' {...register('name', {required: true})} />
+                  {errors.name && <span className={styles.error}> Ce champ est requis.</span>}          
+                <input className={styles.input} placeholder='Email' {...register('email', {required: true})} />
+                  {errors.email && <span className={styles.error}> Ce champ est requis.</span>}          
+                <input className={styles.input} placeholder='Demande' {...register('subject', {required: true})} />
+                  {errors.subject && <span className={styles.error}> Ce champ est requis.</span>}           
+                <textarea className={styles.textarea} placeholder='Message'  {...register('message', {required: true})} />
+                  {errors.message && <span className={styles.error}> Ce champ est requis.</span>}     
+               </div>
+              <div>
+                <button className={styles.submit} type="submit">Envoyer</button>
+              </div>     
+          </form>
         )}
     </section>
   </>
