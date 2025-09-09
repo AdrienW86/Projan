@@ -63,8 +63,7 @@ export default function Carousel() {
               transition={{ duration: 0.3 }}
             > 
               Voir toutes les photos 
-            </motion.a>
-           
+            </motion.a>      
         </div>
       <div className={styles.carouselInner}>
         {images.map((image, index) => (
