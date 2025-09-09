@@ -11,9 +11,10 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Header />
-      <SimpleBannerVideo url = '/projan3.mp4'/>
+       <Banner />
+     
      <Intro />
-     <Banner />
+    
       <Equipment />
       <Description />
       <Footer />     
