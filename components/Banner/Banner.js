@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 import styles from './banner.module.css';
 
 const videos = [
-  
+  '/projan.mp4',
   '/projan1.mp4',
   '/projan2.mp4',
   '/projan3.mp4',
@@ -18,7 +18,7 @@ export default function VideoCarousel({ fadeDuration = 1.5, clipDuration = 7 }) 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % videos.length);
-    }, (clipDuration - fadeDuration) * 1000); // déclenchement avant la fin du clip
+    }, (clipDuration - fadeDuration) * 1000); 
 
     return () => clearInterval(interval);
   }, [clipDuration, fadeDuration]);
