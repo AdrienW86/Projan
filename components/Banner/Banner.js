@@ -8,7 +8,7 @@ const videos = [
   
   '/projan1.mp4',
   '/projan2.mp4',
-  '/projan.mp4',
+  '/projan3.mp4',
 ];
 
 export default function VideoCarousel({ fadeDuration = 1.5, clipDuration = 7 }) {
