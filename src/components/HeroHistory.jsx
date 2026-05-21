@@ -31,7 +31,7 @@ export default function HeroHistory() {
 
           <div className="pt-4">
             <a 
-              href="#domain-explore" 
+              href="/photos" 
               className="inline-flex font-sans text-xs tracking-widest uppercase text-chateau-or group items-center space-x-3 transition-colors hover:text-white"
             >
               <span>Découvrir le domaine</span>

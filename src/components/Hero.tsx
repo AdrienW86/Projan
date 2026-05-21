@@ -78,13 +78,13 @@ export default function Hero({ fadeDuration = 1.5, clipDuration = 7 }: HeroProps
         {/* BOUTONS D'ACTION (CTA) */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a 
-            href="#reservation" 
+            href="/contact" 
             className="w-full sm:w-auto bg-chateau-or hover:bg-chateau-or/90 text-chateau-anthracite font-sans text-xs tracking-widest uppercase px-8 py-4 font-semibold transition-all duration-300 ease-in-out shadow-lg hover:-translate-y-0.5"
           >
             Réserver votre séjour
           </a>
           <a 
-            href="#decouvrir" 
+            href="/photos" 
             className="w-full sm:w-auto border border-chateau-pierre/40 hover:border-chateau-pierre bg-chateau-pierre/5 hover:bg-chateau-pierre/10 text-chateau-pierre font-sans text-xs tracking-widest uppercase px-8 py-4 transition-all duration-300 ease-in-out backdrop-blur-sm"
           >
             Explorer le domaine
