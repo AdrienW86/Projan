@@ -107,7 +107,7 @@ export default function LaTablePage() {
             Nos dîners et dégustations sont accessibles sur réservation pour nos résidents et invités exclusifs.
           </p>
           <Link href='/contact' className="font-sans text-xs tracking-widest uppercase bg-chateau-or text-chateau-anthracite font-semibold px-8 py-4 hover:bg-white transition-colors duration-300 cursor-pointer">
-            Contacter notre service conciergerie
+            Contactez notre équipe
           </Link>
         </div>
 

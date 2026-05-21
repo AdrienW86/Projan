@@ -58,7 +58,7 @@ export default function HeroHistory() {
           {/* Deuxième image plus petite, surélevée et superposée à droite */}
           <div className="col-span-4 h-[75%] relative overflow-hidden shadow-2xl z-20 mt-12 group border-l-4 border-chateau-anthracite">
             <Image
-              src="/image2.jpg"
+              src="/image10.jpg"
               alt="Art contemporain au Château de Projan"
               fill
               className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
