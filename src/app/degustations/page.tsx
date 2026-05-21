@@ -113,7 +113,7 @@ export default function ArmagnacPage() {
             Nos ateliers et dégustations privées sont organisés sur demande pour nos hôtes résidents ou lors de vos événements de prestige.
           </p>
           <Link href='/contact' className="font-sans text-xs tracking-widest uppercase bg-chateau-or text-chateau-anthracite font-semibold px-8 py-4 hover:bg-white transition-colors duration-300 cursor-pointer">
-            Réserver une dégustation privée
+            Dégustation privée
           </Link>
         </div>
 
