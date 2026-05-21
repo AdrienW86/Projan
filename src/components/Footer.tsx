@@ -66,7 +66,7 @@ export default function Footer() {
                 <Link href="/region" className="hover:text-white transition-colors">Découvrir le Gers</Link>
               </li>
               <li>
-                <Link href="#reservation" className="text-chateau-or hover:underline transition-all">Réserver un séjour</Link>
+                <Link href="/contact" className="text-chateau-or hover:underline transition-all">Réserver un séjour</Link>
               </li>
             </ul>
           </div>
@@ -78,7 +78,7 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 font-sans text-chateau-pierre/80 tracking-wide">
               <li>
-                <a href="tel:+33562000000" className="hover:text-white transition-colors">+33 (0)5 62 09 46 21</a>
+                <a href="tel:+33562094621" className="hover:text-white transition-colors">+33 (0)5 62 09 46 21</a>
               </li>
               <li>
                 <a href="mailto:contact@chateaudeprojan.com" className="hover:text-white transition-colors">contact@chateaudeprojan.com</a>
@@ -86,7 +86,7 @@ export default function Footer() {
               <li className="pt-2 flex space-x-4">
                 {/* Icônes de réseaux sociaux stylisées en texte minimaliste */}
                 <a href="#" className="text-xs tracking-widest uppercase hover:text-chateau-or transition-colors">Instagram</a>
-                <a href="#" className="text-xs tracking-widest uppercase hover:text-chateau-or transition-colors">Facebook</a>
+                <a href="https://www.facebook.com/chateaudeprojan/?locale=fr_FR" className="text-xs tracking-widest uppercase hover:text-chateau-or transition-colors">Facebook</a>
               </li>
             </ul>
           </div>

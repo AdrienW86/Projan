@@ -145,9 +145,9 @@ export default function SuitesSalonsPage() {
           <p className="font-sans text-sm text-chateau-pierre/70 max-w-xl mx-auto">
             Chacune de nos chambres et suites offre une expérience de séjour hautement confidentielle. Découvrez la douceur de vivre du Gers.
           </p>
-          <button className="font-sans text-xs tracking-widest uppercase bg-chateau-or text-chateau-anthracite font-semibold px-8 py-4 hover:bg-white transition-colors duration-300 cursor-pointer">
+          <Link href ='/contact' className="font-sans text-xs tracking-widest uppercase bg-chateau-or text-chateau-anthracite font-semibold px-8 py-4 hover:bg-white transition-colors duration-300 cursor-pointer">
             Vérifier les disponibilités
-          </button>
+          </Link>
         </div>
 
       </div>

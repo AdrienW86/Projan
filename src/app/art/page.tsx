@@ -78,9 +78,9 @@ export default function ArtDomainePage() {
           <p className="font-sans text-sm text-chateau-pierre/70 max-w-xl mx-auto">
             Privatisation pour événements d'exception, retraites inspirantes ou séjours confidentiels au cœur de la Gascogne.
           </p>
-          <button className="font-sans text-xs tracking-widest uppercase bg-chateau-or text-chateau-anthracite font-semibold px-8 py-4 hover:bg-white transition-colors duration-300 cursor-pointer">
+          <Link href='/contact' className="font-sans text-xs tracking-widest uppercase bg-chateau-or text-chateau-anthracite font-semibold px-8 py-4 hover:bg-white transition-colors duration-300 cursor-pointer">
             Réserver votre séjour
-          </button>
+          </Link>
         </div>
 
       </div>

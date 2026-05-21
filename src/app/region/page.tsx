@@ -9,21 +9,21 @@ const gersExperiences = [
     id: "bastides",
     title: "Bastides & Plus Beaux Villages",
     description: "Explorez les ruelles médiévales de Larressingle, les arcades de Montréal-du-Gers ou la majesté de Lectoure. Un patrimoine de pierre blonde figé dans le temps.",
-    image: "/gers-villages.jpg", // Idée d'illustration : Un gros plan texturé sur une arche en pierre blonde baignée de lumière avec une ombre douce
+    image: "/villages.png", // Idée d'illustration : Un gros plan texturé sur une arche en pierre blonde baignée de lumière avec une ombre douce
     alt: "Ruelle en pierre blonde d'un village médiéval gersois sous une lumière rasante"
   },
   {
     id: "vignobles",
     title: "Le Secret des Vignobles",
     description: "Parcourez les routes vallonnées à la rencontre des domaines de l'Armagnac et du Floc de Gascogne. Une immersion au cœur de chais séculaires où dort l'or liquide.",
-    image: "/gers-vignes.jpg", // Idée d'illustration : Des rangées de vignes brumeuses au lever du soleil ou de vieux fûts de chêne sombres dans un chai éclairé à la bougie
+    image: "/vignes.png", // Idée d'illustration : Des rangées de vignes brumeuses au lever du soleil ou de vieux fûts de chêne sombres dans un chai éclairé à la bougie
     alt: "Vignes vallonnées de Gascogne au lever du jour dans la brume"
   },
   {
     id: "marches",
     title: "Les Marchés de Saison",
     description: "Vivez l'authenticité des marchés locaux de Samatan ou d'Eauze. Un festival de couleurs, de parfums du terroir et de rencontres sincères avec nos producteurs.",
-    image: "/gers-marches.jpg", // Idée d'illustration : Une nature morte minimaliste sur un étal (gros plan esthétique sur des herbes fraîches, de l'ail violet de Cadours ou des melons de Lectoure)
+    image: "/marches.png", // Idée d'illustration : Une nature morte minimaliste sur un étal (gros plan esthétique sur des herbes fraîches, de l'ail violet de Cadours ou des melons de Lectoure)
     alt: "Produits de saison et étal de marché traditionnel dans le Gers"
   }
 ];
@@ -112,7 +112,7 @@ export default function DecouvrirGersPage() {
             Après une journée d'exploration au cœur du patrimoine gersois, retrouvez la sérénité de nos suites et les saveurs de notre table confidentielle.
           </p>
           <div className="flex flex-wrap justify-center gap-4 pt-2">
-            <Link href="/suites-et-salons" className="font-sans text-xs tracking-widest uppercase bg-chateau-or text-chateau-anthracite font-semibold px-6 py-4 hover:bg-white transition-colors duration-300">
+            <Link href="/photos" className="font-sans text-xs tracking-widest uppercase bg-chateau-or text-chateau-anthracite font-semibold px-6 py-4 hover:bg-white transition-colors duration-300">
               Choisir sa Suite
             </Link>
             <Link href="/contact" className="font-sans text-xs tracking-widest uppercase border border-chateau-pierre/30 text-white px-6 py-4 hover:border-chateau-or transition-colors duration-300">

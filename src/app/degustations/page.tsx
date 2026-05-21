@@ -27,7 +27,7 @@ export default function ArmagnacPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7 relative h-[450px] sm:h-[550px] w-full shadow-2xl">
             <Image 
-              src="/image18.jpg" // Réutilisation directe de ton asset galerie (Dégustation d'Armagnac précieux)
+              src="/armagnac2.png" // Réutilisation directe de ton asset galerie (Dégustation d'Armagnac précieux)
               alt="Dégustation privée de vieux Armagnacs millésimés dans les salons du château"
               fill
               className="object-cover"
@@ -64,7 +64,7 @@ export default function ArmagnacPage() {
           </div>
           <div className="lg:col-span-7 relative h-[450px] sm:h-[550px] w-full shadow-2xl lg:order-1 bg-chateau-anthracite">
             <Image 
-              src="/armagnac-chai.jpg" // Idée d'illustration ci-dessous
+              src="/armagnac.png" // Idée d'illustration ci-dessous
               alt="Fûts de chêne séculaires alignés dans un chai d'Armagnac traditionnel dans le Gers"
               fill
               className="object-cover brightness-[0.75]"
@@ -112,9 +112,9 @@ export default function ArmagnacPage() {
           <p className="font-sans text-sm text-chateau-pierre/70 max-w-xl mx-auto">
             Nos ateliers et dégustations privées sont organisés sur demande pour nos hôtes résidents ou lors de vos événements de prestige.
           </p>
-          <button className="font-sans text-xs tracking-widest uppercase bg-chateau-or text-chateau-anthracite font-semibold px-8 py-4 hover:bg-white transition-colors duration-300 cursor-pointer">
+          <Link href='/contact' className="font-sans text-xs tracking-widest uppercase bg-chateau-or text-chateau-anthracite font-semibold px-8 py-4 hover:bg-white transition-colors duration-300 cursor-pointer">
             Réserver une dégustation privée
-          </button>
+          </Link>
         </div>
 
       </div>
