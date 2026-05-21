@@ -146,7 +146,7 @@ export default function SuitesSalonsPage() {
             Chacune de nos chambres et suites offre une expérience de séjour hautement confidentielle. Découvrez la douceur de vivre du Gers.
           </p>
           <Link href ='/contact' className="font-sans text-xs tracking-widest uppercase bg-chateau-or text-chateau-anthracite font-semibold px-8 py-4 hover:bg-white transition-colors duration-300 cursor-pointer">
-            Vérifier les disponibilités
+            Réserver
           </Link>
         </div>
 
