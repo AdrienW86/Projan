@@ -43,7 +43,7 @@ export default function Navbar() {
           
           {/* BOUTON DE RÉSERVATION */}
           <Link 
-            href="#reservation" 
+            href="/contact" 
             className="border border-chateau-or px-5 py-2.5 text-chateau-or hover:bg-chateau-or hover:text-chateau-anthracite transition-all duration-300 ease-in-out font-medium"
           >
             Réserver
@@ -88,7 +88,7 @@ export default function Navbar() {
             Contact
           </Link>
           <Link 
-            href="#reservation" 
+            href="/" 
             onClick={() => setIsOpen(false)}
             className="bg-chateau-or text-chateau-anthracite py-3.5 text-xs font-semibold tracking-widest uppercase transition-transform active:scale-98"
           >
