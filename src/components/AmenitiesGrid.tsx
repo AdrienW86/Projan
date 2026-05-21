@@ -20,13 +20,13 @@ export default function AmenitiesGrid() {
       number: "03",
       title: "Les Salons d'Art",
       description: "Des espaces de vie feutrés où les cheminées historiques côtoient des expositions d’art contemporain sélectionnées.",
-      image: "/image3.jpg", // Remplace par ton image
+      image: "/couloir.avif", // Remplace par ton image
     },
     {
       number: "04",
       title: "La Cave de Dégustation",
       description: "Un écrin intimiste dédié à la découverte des plus grands millésimes d'Armagnac et des trésors viticoles locaux.",
-      image: "/image4.jpg", // Remplace par ton image
+      image: "/armagnac.png", // Remplace par ton image
     },
   ];
 

@@ -12,25 +12,25 @@ export default function ExperiencesSlider() {
       tag: "Culture",
       title: "Parcours d'Art Contemporain",
       description: "Flânez dans le parc et les salons pour découvrir une collection privée d'œuvres singulières et de sculptures monumentales.",
-      image: "/image4.jpg",
+      image: "/tableau.png",
     },
     {
       tag: "Épicurisme",
       title: "Éveil des Sens & Armagnac",
       description: "Une initiation exclusive aux secrets des vieux millésimes de la région, guidée par un sommelier passionné.",
-      image: "/image5.jpg",
+      image: "/armagnac2.png",
     },
     {
       tag: "Bien-être",
       title: "Sérénité sous les Cèdres",
       description: "Profitez d'une séance de yoga matinale ou d'un massage sur mesure à l'ombre des arbres séculaires du domaine.",
-      image: "/image6.jpg",
+      image: "/vue4.webp",
     },
     {
       tag: "Découverte",
       title: "Échappée Gasconne",
       description: "Explorez les marchés de producteurs du Gers, les bastides médiévales et les vignobles secrets environnants.",
-      image: "/image7.jpg",
+      image: "/marches.png",
     },
   ];
 
