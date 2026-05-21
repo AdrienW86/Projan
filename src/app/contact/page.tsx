@@ -53,7 +53,7 @@ export default function ContactPage() {
               <div className="space-y-2 text-sm text-chateau-pierre/80 leading-relaxed">
                 <p>
                   <span className="text-chateau-or font-medium mr-2">Téléphone :</span> 
-                  <a href="tel:+33562000000" className="hover:text-white transition-colors">+33 (0)5 62 00 00 00</a>
+                  <a href="tel:+33562094621" className="hover:text-white transition-colors">+33 (0)5 62 09 46 21</a>
                 </p>
                 <p>
                   <span className="text-chateau-or font-medium mr-2">Email :</span> 
